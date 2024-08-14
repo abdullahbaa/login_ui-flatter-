@@ -33,7 +33,7 @@ class _MyloginState extends State<Mylogin> {
                     decoration: InputDecoration(
                       fillColor: Colors.grey.shade100,
                       filled: true,
-                      hintText: "Email me",
+                      hintText: "Email",
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10)
                       )
