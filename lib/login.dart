@@ -25,8 +25,8 @@ class _MyloginState extends State<Mylogin> {
               ),
             ),
             Container(
-              //padding: const EdgeInsets.only(top: Media.of(context).size.height *0.5,
-              //right: 35,left: 35),
+              padding: EdgeInsets.only(top: MediaQuery.of(context).size.height *0.5,
+              right: 35,left: 35),
               child: Column(
                 children: [
                   TextField(
@@ -52,12 +52,24 @@ class _MyloginState extends State<Mylogin> {
                             borderRadius: BorderRadius.circular(10)
                         )
                     )
-                  )
+                  ),
+                  const SizedBox(height: 30,),
+                  const Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [ Text('Sign In',
+                      style: TextStyle(
+                          color:  Color(0xff4c505b),
+                          fontSize: 27,fontWeight: FontWeight.w700),)],
+
+                  ),
+                  CircleAvatar(radius: 30,
+                  backgroundColor: const Color(0xff4c505b),
+                  child: IconButton( color: Colors.white,
+                      onPressed: (){},icon:const Icon(Icons.arrow_forward)),)
                 ],
               ),
-            )
-          ],
-        )
+            ),
+       ])
       ),
     );
   }
